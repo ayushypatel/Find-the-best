@@ -1,0 +1,277 @@
+.image-home {
+  background-image: url("../../assets/crop-plate.png.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .image-home:hover{
+    transition: transform 1s ease; 
+    transform-origin: center center; 
+    transform: scale(1.01);
+  } */
+.logo {
+  font-size: 40px;
+  margin-right: 10px;
+  margin-top: -25px;
+  float: left;
+  color: #f51a07;
+}
+
+.find-txt-home {
+  margin-top: -12px;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: 0.1cap;
+  color: #f51a07;
+  font-family: "Cookie", cursive;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgba(11, 10, 10, 0.811);
+  /* Semi-transparent white background */
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  color: #f00b26eb;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  flex-grow: 0.6;
+  letter-spacing: 0.1cap;
+}
+
+/* Center align text elements */
+.right-section span {
+  position: relative;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Ubuntu", sans-serif !important;
+  margin: 0 35px;
+  /* Adjust spacing between elements */
+}
+
+/* Create a line below each span */
+.right-section span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  /* Adjust the position of the line */
+  width: 0;
+  /* Initially, the line has no width */
+  height: 2px;
+  /* Height of the line */
+  background-color: #f00b26eb;
+  /* Line color */
+  transition: width 0.2s ease;
+  /* Smooth transition for width change */
+}
+
+/* Expand the line width when hovering */
+.right-section span:hover::after {
+  width: 100%;
+}
+
+.right-section span:hover {
+  color: #f00b26eb;
+}
+
+.center-text-home {
+  font-weight: 900;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 7%;
+  height: 65vh;
+  color: #fff;
+  font-family: "Cherry Swash", serif;
+  letter-spacing: 0.05cap;
+}
+
+.center-text-home div {
+  margin-bottom: 10px;
+  /* Adjust spacing between text blocks */
+  /* Add any other styling as needed */
+}
+
+.find-dish {
+  font-size: 20px !important;
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 400 !important;
+  margin-left: 5px !important;
+  margin-top: 10px !important;
+  letter-spacing: 0cap !important;
+}
+
+.input-home-one {
+  width: 60%;
+  color: #fff;
+  font-size: 15px;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  width: 520px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin-top: 40px;
+}
+.input-home-one::placeholder {
+  color: #fff; /* Change this color to whatever you want */
+}
+.input-home-search {
+  width: 35%;
+  border-left: 2px solid #fff !important;
+  outline: none;
+  color: #fff !important;
+  border: none;
+  background-color: transparent;
+}
+
+.input-home-search,
+.placeholder-option {
+  color: #fff !important;
+  font-size: 15px;
+  background-color: transparent !important;
+  padding-left: 12px;
+}
+.input-home-search option {
+  background-color: black;
+  color: white;
+}
+.we-want-to {
+  font-family: "Cookie", cursive;
+  letter-spacing: 0.4cap;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.food-category {
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 50px;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #f3f3f3;
+}
+.font-ubuntu {
+  font-family: "Bree Serif", serif !important;
+}
+.secondary-color {
+  color: #f51a07 !important;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-right: 15px;
+}
+
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px; 
+    overflow: hidden;
+    background: transparent; 
+  }
+  
+
+  .font-bree{
+    font-family: "Bree Serif", serif !important;
+  }
+  .custom-card {
+    position: relative; /* Needed for absolute positioning of children */
+    width: 18rem; /* Or whatever width you prefer */
+  }
+  
+  .custom-card-img {
+    height: 280px; /* Set a fixed height for your images */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+  }
+  
+  .custom-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    transition: transform 0.5s;
+    opacity: 0; /* Hide initially */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  }
+  
+  .custom-card:hover .custom-card-overlay {
+    opacity: 1;
+  }
+
+  
+  .custom-card-text p {
+    color: white;
+    margin: 0; 
+  }
+.carousel-item .d-flex {
+    justify-content: start; 
+  }
+  
+  .custom-card {
+    flex: 0 0 25%; 
+    max-width: 25%;
+    margin-right: 1%; 
+  }
+  
+  .custom-card:last-child {
+    margin-right: 0;
+  }
+  
+  /* CustomCarousel.css */
+.carousel-inner {
+    position: relative;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; /* Adjust this value as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .custom-card-container {
+    padding: 0 10%; /* Same value as the carousel-control width */
+  }
+  
+  .custom-card {
+    margin: 0 8px; /* Or however much space you want between cards */
+  }
+  
